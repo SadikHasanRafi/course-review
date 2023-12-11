@@ -7,7 +7,7 @@ async function main (){
     
     try {
         
-        app.listen(3000,()=>{
+        await app.listen(8080,()=>{
             console.log("server is running perfectly fine.")
         })
 

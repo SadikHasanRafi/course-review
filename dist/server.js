@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = __importDefault(require("."));
 async function main() {
     try {
-        _1.default.listen(3000, () => {
+        await _1.default.listen(8080, () => {
             console.log("server is running perfectly fine.");
         });
     }
