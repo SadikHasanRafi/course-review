@@ -1,5 +1,5 @@
 # **Assignment 3: Course Review**
-node version 16.14.0
+node version 16.20.1
 ## Create Private Repo: [https://classroom.github.com/a/E1wzFwtT](https://classroom.github.com/a/E1wzFwtT)
 
 # **Assignment Requirements:**
