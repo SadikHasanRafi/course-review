@@ -15,33 +15,27 @@ const createCourse =  catchAsync(async (req:Request,res:Response,next:NextFuncti
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const getAllCourses = catchAsync(async (req:Request,res:Response,next:NextFunction)=>{
-    console.log("working fine")
-    res.send("working fine")
+    const result =await courseService.getAllCourses(req.params)
+    res.send(result)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const updateSingleCourse = catchAsync(async (req:Request,res:Response,next:NextFunction)=>{
 

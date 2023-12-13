@@ -11,8 +11,8 @@ const createCourse = (0, catchAsync_1.default)(async (req, res, next) => {
     res.send(result);
 });
 const getAllCourses = (0, catchAsync_1.default)(async (req, res, next) => {
-    console.log("working fine");
-    res.send("working fine");
+    const result = await course_service_1.courseService.getAllCourses(req.params);
+    res.send(result);
 });
 const updateSingleCourse = (0, catchAsync_1.default)(async (req, res, next) => {
 });
