@@ -4,8 +4,8 @@ import { courseCategoryController } from "./course-category.controller";
 const courseCategoryRoutes = Router()
 
 
-courseCategoryRoutes.get("/",courseCategoryController.addNewCourseCategory)
-courseCategoryRoutes.post("/",courseCategoryController.getAllCourseCategory)
+courseCategoryRoutes.post("/",courseCategoryController.addNewCourseCategory)
+courseCategoryRoutes.get("/",courseCategoryController.getAllCourseCategory)
 
 
 

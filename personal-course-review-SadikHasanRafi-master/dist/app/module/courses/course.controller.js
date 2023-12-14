@@ -11,12 +11,14 @@ const createCourse = (0, catchAsync_1.default)(async (req, res, next) => {
     res.send(result);
 });
 const getAllCourses = (0, catchAsync_1.default)(async (req, res, next) => {
-    const result = await course_service_1.courseService.getAllCourses(req.params);
+    const result = await course_service_1.courseService.getAllCourses(req.query);
+    res.send(result);
+});
+const getSingleCourseWithReview = (0, catchAsync_1.default)(async (req, res, next) => {
+    const result = await course_service_1.courseService.getCourseAndReviews(req.params);
     res.send(result);
 });
 const updateSingleCourse = (0, catchAsync_1.default)(async (req, res, next) => {
-});
-const getSingleCourseWithReview = (0, catchAsync_1.default)(async (req, res, next) => {
 });
 const getBestCoursesByRating = (0, catchAsync_1.default)(async (req, res, next) => {
 });

@@ -4,7 +4,7 @@ exports.CourseCategoryModel = void 0;
 const mongoose_1 = require("mongoose");
 const CourseCategorySchema = new mongoose_1.Schema({
     name: {
-        types: String
+        type: String,
     }
 });
-exports.CourseCategoryModel = (0, mongoose_1.model)('CourseCategory', CourseCategorySchema);
+exports.CourseCategoryModel = (0, mongoose_1.model)("CourseCategory", CourseCategorySchema);

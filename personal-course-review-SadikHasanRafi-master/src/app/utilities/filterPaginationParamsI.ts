@@ -1,4 +1,22 @@
 export interface courseFilterPaginationParamsI {
-    page:number | 1,
-    limit: number | 10,
+    page?:number ,
+    limit?: number,
+    
+    sortOrder?: string,
+    sortBy?:any,
+
+    title?:string,
+    price?:string,
+    startDate?:string,
+    endDate?:string,
+    language?:string,
+    duration?:number,
+
+    minPrice?:number,
+    maxPrice?:number,
+
+    tags?:string,
+    provider?:string,
+    durationInWeeks?:number,
+    level?:string
 }
